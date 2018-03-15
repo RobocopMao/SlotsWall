@@ -93,7 +93,7 @@ class DialogItem extends Component {
         toUserName: 'PAIJO',
         content: '哈哈哈哈，这个逼装大了'
       }, {
-        userName: 'DAS',
+        userName: 'DASNI',
         toUserName: 'PAIJO',
         content: '太逗了'
       }]
