@@ -6,6 +6,7 @@
 
 import React, {Component} from 'react';
 import {StackNavigator, TabNavigator} from 'react-navigation';
+import CardStackStyleInterpolator from 'react-navigation/src/views/CardStack/CardStackStyleInterpolator';
 import HomeScreen from './src/pages/home/HomeScreen'
 import MineScreen from './src/pages/MineScreen'
 
@@ -66,6 +67,16 @@ const App = StackNavigator({
     })
 
   },
+}, {
+  // mode:'modal',
+  headerMode: 'screen',
+  transitionConfig: () => ({
+    transitionSpec: {
+      duration: 280,
+    },
+    // 只要修改最后的forVertical就可以实现不同的动画了。
+    screenInterpolator: CardStackStyleInterpolator.forHorizontal,
+  })
 });
 
 export default App
