@@ -1,0 +1,2 @@
+# SlotsWall
+A RN project
